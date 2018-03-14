@@ -131,6 +131,11 @@ module.exports = function(grunt) {
         files: {
           'dist/jszip.js': ['lib/index.js']
         },
+        ignore: [
+          'lib/generate/*',
+          'lib/nodejs*',
+          'lib/nodejs/*'
+        ],
         options: {
           browserifyOptions: {
             standalone: 'JSZip',
